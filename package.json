@@ -1,6 +1,6 @@
 {
   "name": "raw.css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Style for raw html tags",
   "main": "raw.css",
   "repository": "https://github.com/matheusps/raw.css.git",
