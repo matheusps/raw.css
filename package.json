@@ -1,10 +1,17 @@
 {
   "name": "raw.css",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Style for raw html tags",
   "main": "raw.css",
-  "repository": { "type": "git", "url": "git+https://github.com/matheusps/raw.css.git" },
-  "keywords": ["css", "stylesheet", "raw"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusps/raw.css.git"
+  },
+  "keywords": [
+    "css",
+    "stylesheet",
+    "raw"
+  ],
   "author": "matheusps <cout.matheusps@gmail.com>",
   "license": "MIT",
   "scripts": {
