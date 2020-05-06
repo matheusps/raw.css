@@ -1487,6 +1487,11 @@ quick-lru@^4.0.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-4.0.1.tgz#5b8878f113a58217848c6482026c73e1ba57727f"
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
 
+raw.css@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/raw.css/-/raw.css-0.1.0.tgz#f852e25dd23d2919c580057a73fd2b644175f01d"
+  integrity sha512-eFTB5AdMi3piAGlf4cbN4xS/OEdwdRG0hHU7D8C+FORixxCmXvVOCRsV77wddCLcO5B3JjYdomZCuHvuyexqcA==
+
 rc@^1.2.8:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
