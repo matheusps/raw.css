@@ -1,0 +1,16 @@
+{
+  "name": "raw.css",
+  "version": "0.0.0",
+  "description": "Style for raw html tags",
+  "main": "src/raw.css",
+  "repository": "https://github.com/matheusps/raw.css.git",
+  "author": "matheusps <cout.matheusps@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "release": "np"
+  },
+  "devDependencies": {
+    "np": "^6.2.3"
+  }
+}
