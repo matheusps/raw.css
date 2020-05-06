@@ -4,8 +4,8 @@
   --color-surface: rgb(242, 242, 247);
   --color-on-surface: rgb(28, 28, 30);
   --color-surface--hover: rgb(232, 232, 237);
-  --color-surface--active: rgb(242, 242, 247);
-  --color-surface--disabled: rgb(222, 222, 222);
+  --color-surface--active: rgb(222, 222, 227);
+  --color-surface--disabled: rgb(248, 248, 255);
   --color-primary:rgb(0, 122, 255);
   --color-on-primary: rgb(255, 255, 255);
   --color-text: rgb(28, 28, 30);
@@ -20,6 +20,8 @@
   'Courier New', monospace;
   
   --focus-outline: 0 0 0 0.1rem var(--color-shadow-outline);
+  --active-outline: 0 0 0 1rem var(--color-shadow-outline);
+
 }
 
 /** general **/
@@ -117,11 +119,13 @@ input {
   color: var(--color-on-surface);
   background-image: none;
   font-size: 1rem;
+  transition: all 0.3s
 }
 
 input:active,
 button:active {
   background-color: var(--color-surface--active);
+  outline: none;
 }
 
 input:hover,
@@ -132,6 +136,8 @@ button:hover {
 input:disabled,
 button:disabled {
   background-color:  var(--color-surface--disabled);
+  color: var(--color-text-subtle);
+  cursor: not-allowed;
 }
 
 input:focus,
