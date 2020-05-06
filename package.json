@@ -3,17 +3,18 @@
   "version": "0.1.1",
   "description": "Style for raw html tags",
   "main": "raw.css",
-  "repository": "https://github.com/matheusps/raw.css.git",
+  "repository": { "type": "git", "url": "git+https://github.com/matheusps/raw.css.git" },
+  "keywords": ["css", "stylesheet", "raw"],
   "author": "matheusps <cout.matheusps@gmail.com>",
   "license": "MIT",
-  "private": false,
   "scripts": {
     "release": "np"
   },
   "devDependencies": {
     "np": "^6.2.3"
   },
-  "dependencies": {
-    "raw.css": "^0.1.0"
-  }
+  "bugs": {
+    "url": "https://github.com/matheusps/raw.css/issues"
+  },
+  "homepage": "https://github.com/matheusps/raw.css.git"
 }
