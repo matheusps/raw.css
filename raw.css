@@ -5,6 +5,7 @@
   --color-on-surface: rgb(28, 28, 30);
   --color-surface--hover: rgb(232, 232, 237);
   --color-surface--active: rgb(242, 242, 247);
+  --color-surface--disabled: rgb(222, 222, 222);
   --color-primary:rgb(0, 122, 255);
   --color-on-primary: rgb(255, 255, 255);
   --color-text: rgb(28, 28, 30);
@@ -126,6 +127,11 @@ button:active {
 input:hover,
 button:hover {
   background-color:  var(--color-surface--hover);
+}
+
+input:disabled,
+button:disabled {
+  background-color:  var(--color-surface--disabled);
 }
 
 input:focus,
