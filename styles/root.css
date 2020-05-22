@@ -4,7 +4,8 @@
   --color-surface: rgb(242, 242, 247);
   --color-on-surface: rgb(28, 28, 30);
   --color-surface--hover: rgb(232, 232, 237);
-  --color-surface--active: rgb(242, 242, 247);
+  --color-surface--active: rgb(222, 222, 227);
+  --color-surface--disabled: rgb(248, 248, 255);
   --color-primary:rgb(0, 122, 255);
   --color-on-primary: rgb(255, 255, 255);
   --color-text: rgb(28, 28, 30);
@@ -19,24 +20,5 @@
   'Courier New', monospace;
   
   --focus-outline: 0 0 0 0.1rem var(--color-shadow-outline);
-}
-
-html {
-  font-family: var(--font-family-sans);
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-body {
-  background-color: var(--color-base);
-  color: var(--color-on-base);
-}
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  border-width: 0;
-  border-style: solid;
-  border-color: currentColor;
+  --active-outline: 0 0 0 1rem var(--color-shadow-outline);
 }

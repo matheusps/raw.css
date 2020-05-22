@@ -1,0 +1,19 @@
+html {
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-on-base);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
