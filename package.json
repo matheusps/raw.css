@@ -10,13 +10,12 @@
   "keywords": [
     "css",
     "stylesheet",
-    "raw",
-    "raw.css",
-    "deno"
+    "raw"
   ],
   "author": "matheusps <cout.matheusps@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "prepublish": "yarn build",
     "release": "np",
     "build": "node build.js"
   },
