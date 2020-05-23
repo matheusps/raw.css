@@ -10,7 +10,9 @@
   "keywords": [
     "css",
     "stylesheet",
-    "raw"
+    "raw",
+    "raw.css",
+    "deno"
   ],
   "author": "matheusps <cout.matheusps@gmail.com>",
   "license": "MIT",

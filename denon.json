@@ -1,0 +1,23 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "scripts": {
+    "start": {
+      "cmd": "deno run build.ts",
+      "desc": "Build app",
+      "unstable": true,
+      "allow": [
+        "read",
+        "write"
+      ]
+    }
+  },
+  "watcher": {
+    "exts": ["js", "ts", "json", "css"],
+    "match": [
+      "*.*"
+    ],
+    "skip": [
+      "*/.git/*"
+    ]
+  }
+}
