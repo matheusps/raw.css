@@ -23,17 +23,30 @@
   
   --focus-outline: 0 0 0 0.1rem var(--color-shadow-outline);
   --active-outline: 0 0 0 1rem var(--color-shadow-outline);
+
+  --spacing-none: 0;
+  --spacing-xs: .25rem;
+  --spacing-sm: .5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  --spacing-xxl: 8rem;
+  --spacing-xxxl: 16rem;
 }
 
 html {
   font-family: var(--font-family-sans);
   font-size: 1rem;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: var(--color-base);
   color: var(--color-on-base);
+  margin: 0;
+  padding: 0;
 }
 
 *,
@@ -90,8 +103,6 @@ textarea {
   background-color: var(--color-surface);
 }
 
-
-
 textarea {
   resize: vertical;
 }
@@ -114,7 +125,6 @@ input {
   color: var(--color-on-surface);
   background-image: none;
   font-size: 1rem;
-  transition: all 0.3s
 }
 
 input:active,
@@ -139,6 +149,10 @@ input:focus,
 button:focus {
   outline: none;
   box-shadow: var(--focus-outline);
+}
+
+label {
+  cursor: pointer;
 }
 
 img,
@@ -182,4 +196,41 @@ code,
 kbd,
 samp {
   font-family: var(--font-family-mono);
+}
+
+/** raw.css sidebar pattern **/
+
+:root {
+  --pattern-sidebar--gutter: 3ch;
+  --pattern-sidebar--aside-width: 30ch;
+  --pattern-sidebar--content-width: 55%;
+  --pattern-sidebar--height: 100vh;
+}
+
+/** layout **/
+.pattern__sidebar {
+  overflow: hidden;
+  height: var(--pattern-sidebar--height);
+}
+
+/** container **/
+.pattern__sidebar > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--pattern-sidebar--gutter) / 2 * -1);
+  height: calc(100% + var(--pattern-sidebar--gutter));
+}
+
+/** both aside and main **/
+.pattern__sidebar > * > aside, main {
+  margin: calc(var(--pattern-sidebar--gutter) / 2);
+  flex-basis: var(--pattern-sidebar--aside-width);
+  flex-grow: 1;
+}
+
+/** main **/
+.pattern__sidebar > * > main {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(var(--pattern-sidebar--content-width) - var(--pattern-sidebar--gutter));
 }

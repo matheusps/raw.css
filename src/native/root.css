@@ -21,4 +21,13 @@
   
   --focus-outline: 0 0 0 0.1rem var(--color-shadow-outline);
   --active-outline: 0 0 0 1rem var(--color-shadow-outline);
+
+  --spacing-none: 0;
+  --spacing-xs: .25rem;
+  --spacing-sm: .5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  --spacing-xxl: 8rem;
+  --spacing-xxxl: 16rem;
 }

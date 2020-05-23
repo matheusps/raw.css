@@ -1,12 +1,13 @@
 const fs = require('fs')
 
 const files = [
-  './src/root.css',
-  './src/general.css',
-  './src/typo.css',
-  './src/form.css',
-  './src/media.css',
-  './src/misc.css',
+  './src/native/root.css',
+  './src/native/general.css',
+  './src/native/typo.css',
+  './src/native/form.css',
+  './src/native/media.css',
+  './src/native/misc.css',
+  './src/patterns/sidebar.css',
 ]
 
 process.stdout.write("🔥Putting files together \n")

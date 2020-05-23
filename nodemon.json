@@ -1,0 +1,9 @@
+{
+  "execMap": {
+    "css": "yarn build"
+  },
+  "watch": [
+    "src/"
+  ],
+  "ext": "js,json,css"
+}

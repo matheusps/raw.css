@@ -2,11 +2,15 @@ html {
   font-family: var(--font-family-sans);
   font-size: 1rem;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: var(--color-base);
   color: var(--color-on-base);
+  margin: 0;
+  padding: 0;
 }
 
 *,

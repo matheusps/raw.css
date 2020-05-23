@@ -1,14 +1,8 @@
-## Raw CSS
+## 🍣 Raw CSS
 
-This is an npm package, but the build is created with deno.
+⚠️raw.css is currently under development and will not be production-ready any time soon (maybe never will). 
 
-#### Running with deno
+### Development
 
-```
-deno run --unstable --allow-read --allow-write build.ts
-```
-
-#### Running with denon
-```
-denon start
-```
+- `yarn release`: Pulbish a new version
+- `yarn build`: Put css files together

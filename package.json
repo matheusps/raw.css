@@ -17,9 +17,11 @@
   "scripts": {
     "prepublish": "yarn build",
     "release": "np",
-    "build": "node build.js"
+    "build": "node build.js",
+    "dev": "nodemon build"
   },
   "devDependencies": {
+    "nodemon": "^2.0.4",
     "np": "^6.2.3"
   },
   "bugs": {

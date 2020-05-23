@@ -12,8 +12,6 @@ textarea {
   background-color: var(--color-surface);
 }
 
-
-
 textarea {
   resize: vertical;
 }
@@ -36,7 +34,6 @@ input {
   color: var(--color-on-surface);
   background-image: none;
   font-size: 1rem;
-  transition: all 0.3s
 }
 
 input:active,
@@ -61,4 +58,8 @@ input:focus,
 button:focus {
   outline: none;
   box-shadow: var(--focus-outline);
+}
+
+label {
+  cursor: pointer;
 }
