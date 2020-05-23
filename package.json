@@ -17,7 +17,8 @@
   "author": "matheusps <cout.matheusps@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "release": "np"
+    "release": "np",
+    "build": "node build.js"
   },
   "devDependencies": {
     "np": "^6.2.3"
