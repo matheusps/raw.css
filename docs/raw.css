@@ -1,0 +1,283 @@
+/** Raw.css by @matheusps */
+
+:root {
+  --color-base: rgb(255, 255, 255);
+  --color-on-base: rgb(28, 28, 30);
+  --color-surface: rgb(242, 242, 247);
+  --color-on-surface: rgb(28, 28, 30);
+  --color-surface--hover: rgb(232, 232, 237);
+  --color-surface--active: rgb(222, 222, 227);
+  --color-surface--disabled: rgb(248, 248, 255);
+  --color-primary:rgb(0, 122, 255);
+  --color-on-primary: rgb(255, 255, 255);
+  --color-text: rgb(28, 28, 30);
+  --color-text-subtle: rgb(142, 142, 147);
+  --color-shadow-outline: rgba(0, 155, 255, 0.5);
+
+  --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+  'Courier New', monospace;
+  
+  --focus-outline: 0 0 0 0.1rem var(--color-shadow-outline);
+  --active-outline: 0 0 0 1rem var(--color-shadow-outline);
+
+  --spacing-none: 0;
+  --spacing-xs: .25rem;
+  --spacing-sm: .5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  --spacing-xxl: 8rem;
+  --spacing-xxxl: 16rem;
+}
+
+html {
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-on-base);
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+optgroup,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  background-color: var(--color-surface);
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-subtle);
+}
+
+button,
+[role='button'] {
+  cursor: pointer;
+}
+
+button,
+input {
+  padding: 0.5rem;
+  margin: 0.1rem;
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  background-image: none;
+  font-size: 1rem;
+}
+
+input:active,
+button:active {
+  background-color: var(--color-surface--active);
+  outline: none;
+}
+
+input:hover,
+button:hover {
+  background-color:  var(--color-surface--hover);
+}
+
+input:disabled,
+button:disabled {
+  background-color:  var(--color-surface--disabled);
+  color: var(--color-text-subtle);
+  cursor: not-allowed;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  box-shadow: var(--focus-outline);
+}
+
+label {
+  cursor: pointer;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  border-style: solid;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border-top-width: 0.063rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--font-family-mono);
+}
+
+/** raw.css sidebar pattern **/
+
+:root {
+  --pattern-sidebar--gutter: 3ch;
+  --pattern-sidebar--aside-width: 30ch;
+  --pattern-sidebar--content-width: 55%;
+  --pattern-sidebar--height: 100vh;
+}
+
+/* layout */
+.pattern__sidebar {
+  overflow: hidden;
+  height: var(--pattern-sidebar--height);
+}
+
+/* container */
+.pattern__sidebar > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--pattern-sidebar--gutter) / 2 * -1);
+  height: calc(100% + var(--pattern-sidebar--gutter));
+}
+
+/* both aside and main */
+.pattern__sidebar > * > aside, main {
+  margin: calc(var(--pattern-sidebar--gutter) / 2);
+  flex-basis: var(--pattern-sidebar--aside-width);
+  flex-grow: 1;
+}
+
+/* main */
+.pattern__sidebar > * > main {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(var(--pattern-sidebar--content-width) - var(--pattern-sidebar--gutter));
+}
+
+/** raw.css breadcrumb pattern **/
+
+:root{
+  --pattern-breadcrumb--size: .8rem;
+  --pattern-breadcrumb--thickness: .125rem;
+  --pattern-breadcrumb--style: solid;
+  --pattern-breadcrumb--color: currentColor;
+}
+
+/* container */
+.pattern__breadcrumb {
+  align-items: center;
+  display: flex;
+}
+
+/* separator */
+.pattern__breadcrumb > div {
+  content: '';
+  margin-right: var(--pattern-breadcrumb--size);
+  width: var(--pattern-breadcrumb--size);
+  height: var(--pattern-breadcrumb--size);
+  border-top: var(--pattern-breadcrumb--style) var(--pattern-breadcrumb--thickness) var(--pattern-breadcrumb--color);
+  border-right: var(--pattern-breadcrumb--style) var(--pattern-breadcrumb--thickness) var(--pattern-breadcrumb--color);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/** raw.css split-view pattern **/
+
+/* layout */
+.pattern__split-view {
+  display: flex;
+}
+
+/* each view */
+.pattern__split-view > * {
+  flex: 1;
+}
+
+/** raw.css header modifiers **/
+
+/* sticky to the top */
+header.sticky {
+  position: sticky;
+  top: 0;
+}

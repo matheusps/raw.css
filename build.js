@@ -31,5 +31,9 @@ const reducer = (acc, file) =>
   `${acc}\n\n${fs.readFileSync(file, { encoding: "utf8" })}`
 
 fs.writeFileSync('./raw.css', files.reduce(reducer, '/** Raw.css by @matheusps */') )
+fs.writeFileSync('./docs/raw.css', files.reduce(reducer, '/** Raw.css by @matheusps */') )
+
 
 process.stdout.write("📦 Created raw.css \n")
+process.stdout.write("📦 Created ./docs/raw.css \n")
+
