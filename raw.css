@@ -207,13 +207,13 @@ samp {
   --pattern-sidebar--height: 100vh;
 }
 
-/** layout **/
+/* layout */
 .pattern__sidebar {
   overflow: hidden;
   height: var(--pattern-sidebar--height);
 }
 
-/** container **/
+/* container */
 .pattern__sidebar > * {
   display: flex;
   flex-wrap: wrap;
@@ -221,16 +221,43 @@ samp {
   height: calc(100% + var(--pattern-sidebar--gutter));
 }
 
-/** both aside and main **/
+/* both aside and main */
 .pattern__sidebar > * > aside, main {
   margin: calc(var(--pattern-sidebar--gutter) / 2);
   flex-basis: var(--pattern-sidebar--aside-width);
   flex-grow: 1;
 }
 
-/** main **/
+/* main */
 .pattern__sidebar > * > main {
   flex-basis: 0;
   flex-grow: 999;
   min-width: calc(var(--pattern-sidebar--content-width) - var(--pattern-sidebar--gutter));
+}
+
+/** raw.css breadcrumb pattern **/
+
+:root{
+  --pattern-breadcrumb--size: .8rem;
+  --pattern-breadcrumb--thickness: .125rem;
+  --pattern-breadcrumb--style: solid;
+  --pattern-breadcrumb--color: currentColor;
+}
+
+/* container */
+.pattern__breadcrumb {
+  align-items: center;
+  display: flex;
+}
+
+/* separator */
+.pattern__breadcrumb > div {
+  content: '';
+  margin-right: var(--pattern-breadcrumb--size);
+  width: var(--pattern-breadcrumb--size);
+  height: var(--pattern-breadcrumb--size);
+  border-top: var(--pattern-breadcrumb--style) var(--pattern-breadcrumb--thickness) var(--pattern-breadcrumb--color);
+  border-right: var(--pattern-breadcrumb--style) var(--pattern-breadcrumb--thickness) var(--pattern-breadcrumb--color);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }

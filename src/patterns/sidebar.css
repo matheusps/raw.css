@@ -7,13 +7,13 @@
   --pattern-sidebar--height: 100vh;
 }
 
-/** layout **/
+/* layout */
 .pattern__sidebar {
   overflow: hidden;
   height: var(--pattern-sidebar--height);
 }
 
-/** container **/
+/* container */
 .pattern__sidebar > * {
   display: flex;
   flex-wrap: wrap;
@@ -21,14 +21,14 @@
   height: calc(100% + var(--pattern-sidebar--gutter));
 }
 
-/** both aside and main **/
+/* both aside and main */
 .pattern__sidebar > * > aside, main {
   margin: calc(var(--pattern-sidebar--gutter) / 2);
   flex-basis: var(--pattern-sidebar--aside-width);
   flex-grow: 1;
 }
 
-/** main **/
+/* main */
 .pattern__sidebar > * > main {
   flex-basis: 0;
   flex-grow: 999;
