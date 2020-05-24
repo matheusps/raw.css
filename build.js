@@ -1,14 +1,28 @@
 const fs = require('fs')
 
-const files = [
+const core = [
   './src/core/root.css',
   './src/core/general.css',
   './src/core/typo.css',
   './src/core/form.css',
   './src/core/media.css',
   './src/core/misc.css',
+]
+
+const patterns = [
   './src/patterns/sidebar.css',
-  './src/patterns/breadcrumb.css'
+  './src/patterns/breadcrumb.css',
+  './src/patterns/split-view.css'
+]
+
+const modifiers = [
+  './src/modifiers/header.css'
+]
+
+const files = [
+  ...core,
+  ...patterns,
+  ...modifiers
 ]
 
 process.stdout.write("🔥Putting files together \n")

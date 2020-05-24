@@ -1,0 +1,11 @@
+/** raw.css split-view pattern **/
+
+/* layout */
+.pattern__split-view {
+  display: flex;
+}
+
+/* each view */
+.pattern__split-view > * {
+  flex: 1;
+}

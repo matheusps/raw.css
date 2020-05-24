@@ -261,3 +261,23 @@ samp {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+
+/** raw.css split-view pattern **/
+
+/* layout */
+.pattern__split-view {
+  display: flex;
+}
+
+/* each view */
+.pattern__split-view > * {
+  flex: 1;
+}
+
+/** raw.css header modifiers **/
+
+/* sticky to the top */
+header.sticky {
+  position: sticky;
+  top: 0;
+}

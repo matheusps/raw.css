@@ -1,0 +1,7 @@
+/** raw.css header modifiers **/
+
+/* sticky to the top */
+header.sticky {
+  position: sticky;
+  top: 0;
+}
