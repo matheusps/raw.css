@@ -10,7 +10,7 @@ function Layout({ children }){
         <Logo size={64} />
         <h1>raw.css</h1>
         <nav>
-          <a>Core</a>
+          <a href="/core">Core</a>
           <a>Modifiers</a>
           <a>Patterns</a>
         </nav>
